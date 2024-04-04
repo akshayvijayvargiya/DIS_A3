@@ -1,36 +1,4 @@
-/* 
-
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -275,15 +243,6 @@ Pre-loader Style
   background: #7a6ad8;
   border-radius: 50%;
 }
-
-
-
-/* 
----------------------------------------------
-Header Style
---------------------------------------------- 
-*/
-
 .background-header {
   background-color: #7a6ad8 !important;
   border-radius: 0px 0px 25px 25px;
@@ -660,11 +619,6 @@ Header Style
   
 }
 
-/* 
----------------------------------------------
-Banner Style
---------------------------------------------- 
-*/
 
 .main-banner {
   background-image: url(../images/banner-bg.jpg);
@@ -847,11 +801,6 @@ Services Style
   margin-bottom: 25px;
 }
 
-/* 
----------------------------------------------
-About Style
---------------------------------------------- 
-*/
 
 .about-us {
   position: relative;
@@ -942,13 +891,6 @@ h2.accordion-header button {
 .about-us .section-heading .main-button {
   margin-top: 50px;
 }
-
-
-/* 
----------------------------------------------
-Courses Style
---------------------------------------------- 
-*/
 
 .courses {
   margin-top: 10px;
@@ -1071,13 +1013,6 @@ Courses Style
 .events_item:hover .thumb span.price {
   transform: scale(1.2);
 }
-
-
-/* 
----------------------------------------------
-Facts Style
---------------------------------------------- 
-*/
 
 .fun-facts {
   position: relative;
@@ -1206,13 +1141,6 @@ Team Style
   color: #fff;
 }
 
-
-/* 
----------------------------------------------
-Testimonials Style
---------------------------------------------- 
-*/
-
 .testimonials {
   position: relative;
   padding: 80px 0px;
@@ -1313,13 +1241,6 @@ Testimonials Style
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-/* 
----------------------------------------------
-Events Style
---------------------------------------------- 
-*/
-
 .events .section-heading {
   margin-bottom: 100px;
 }
@@ -1403,13 +1324,6 @@ Events Style
   color: #fff;
   border-radius: 60px 0px 0px 60px;
 }
-
-
-/* 
----------------------------------------------
-Contact Style
---------------------------------------------- 
-*/
 
 .contact-us {
   margin-top: 80px;
@@ -1627,12 +1541,6 @@ Contact Style
   font-weight: 400;
 }
 
-/* 
----------------------------------------------
-Footer Style
---------------------------------------------- 
-*/
-
 footer {
   margin-top: 150px;
   position: relative;
@@ -1672,12 +1580,6 @@ footer::before {
   content: '';
   z-index: 2;
 }
-
-/* 
----------------------------------------------
-Responsive Style
---------------------------------------------- 
-*/
 
 body {
   overflow-x: hidden;
