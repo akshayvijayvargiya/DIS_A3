@@ -18,7 +18,62 @@ pdfMake.fonts = {
   }
 };
 
-var docDefinition = {
+
+    var docDefinition = {
+  pageSize: 'A4',
+  pageMargins: [0, 30, 0, 30], // Attempt to reduce margins, but keep space for header/footer content
+
+  header: function(currentPage, pageCount, pageSize) {
+    // Draw a rectangle the full width of the page
+    return [
+      {
+        canvas: [
+          {
+            type: 'rect',
+            x: 0, y: 0,
+            w: pageSize.width,
+            h: 30,
+            color: '#2596be',
+          }
+        ]
+      },
+      {
+        text: 'Header',
+        alignment: 'center',
+        margin: [0, 5], // Adjust text position within the colored header area
+        color: 'white',
+        font: 'ProximaNova'
+      }
+    ];
+  },
+
+  footer: function(currentPage, pageCount, pageSize) {
+    // Draw a rectangle the full width of the page
+    return [
+      {
+        canvas: [
+          {
+            type: 'rect',
+            x: 0, y: 0,
+            w: pageSize.width,
+            h: 30,
+            color: '#2596be',
+          }
+        ]
+      },
+      {
+        text: 'Footer • Page ' + currentPage + ' of ' + pageCount,
+        alignment: 'center',
+        margin: [0, 5], // Adjust text position within the colored footer area
+        color: 'white',
+        font: 'ProximaNova'
+      }
+    ];
+  },
+
+
+// Add your styles, fonts, and pdfMake.vfs definitions as shown previously
+
   content: [
     { text: 'This is a header', fontSize: 22, margin: [0, 0, 0, 20], font: 'ProximaNova' },
     { text: 'Each paragraph is represented like this.', alignment: 'justify', lineHeight: 1.5, font: 'ProximaNova' },
